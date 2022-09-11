@@ -8,14 +8,19 @@ public class RadioTest {
     Radio radio = new Radio();
 
     @Test
+    public void shouldQuantityRadioStation() {
+
+        radio.setQuantityRadioStation(10);
+        assertEquals(10, radio.getQuantityRadioStation());
+    }
+
+
+    @Test
     void shouldChooseRadioStation1() {
 
         radio.setCurrentRadioStation(1);
         assertEquals(1, radio.getNumberRadioStation());
     }
-
-
-
     @Test
     void shouldChooseRadioStation2() {
 

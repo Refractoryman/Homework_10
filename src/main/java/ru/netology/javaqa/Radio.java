@@ -7,6 +7,8 @@ public class Radio {
     public int minVolume = 0;
     public int maxVolume = 100;
     public int currentVolume;
+    public int quantityRadioStation = 10;
+
 
     public Radio(int minRadioStation, int maxRadioStation, int currentRadioStation,
                  int minVolume, int maxVolume, int currentVolume) {
@@ -19,6 +21,17 @@ public class Radio {
     }
 
     public Radio() {
+    }
+    public Radio(int quantityRadioStation) {
+        this.quantityRadioStation = quantityRadioStation;
+    }
+
+    public void setQuantityRadioStation(int quantityRadioStation) {
+        this.quantityRadioStation = quantityRadioStation;
+    }
+
+    public int getQuantityRadioStation() {
+        return quantityRadioStation;
     }
 
     public int getNumberRadioStation() {
